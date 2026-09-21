@@ -314,6 +314,16 @@ button {
   margin: 0;
 }
 
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-contact p {
+  margin: 0;
+}
+
 .footer-links {
   display: flex;
   gap: 24px;
@@ -492,7 +502,7 @@ button {
     display: none;
   }
 
-    .slider-image {
+  .slider-image {
     height: auto;
     object-fit: contain;
   }
