@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Coffee House logo">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#favorite-coffee">Favorite Coffee</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#about">About</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#mobile-app">Mobile App</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#contact">Contact Us</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="menu.html">Menu</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="theme-button" type="button">Theme</button>
+
+      <button class="burger-button" type="button" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-subtitle">Behind each of our cups hides an absolutely amazing coffee story</p>
+          <h1 class="hero-title">Enjoy your coffee with us</h1>
+          <p class="hero-description">
+            Relax and enjoy a cup of freshly brewed coffee in a cozy atmosphere.
+          </p>
+          <a class="button hero-button" href="#favorite-coffee">Explore our coffee</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="favorite-coffee" id="favorite-coffee">
+      <div class="container">
+        <h2 class="section-title">Choose your favorite coffee</h2>
+
+        <div class="slider">
+          <button class="slider-button slider-button-prev" type="button" aria-label="Previous slide">
+            ←
+          </button>
+
+          <div class="slider-content">
+            <article class="slider-card">
+              <img
+                class="slider-image"
+                src="images/smores.png"
+                alt="S’mores Frappuccino coffee"
+              >
+              <h3 class="slider-title">S’mores Frappuccino</h3>
+              <p class="slider-description">
+                Marshmallow cream, chocolate sauce and coffee topped with whipped cream.
+              </p>
+              <p class="slider-price">$5.50</p>
+            </article>
+
+            <article class="slider-card">
+              <img
+                class="slider-image"
+                src="images/caramel.png"
+                alt="Caramel Macchiato coffee"
+              >
+              <h3 class="slider-title">Caramel Macchiato</h3>
+              <p class="slider-description">
+                Espresso, steamed milk, vanilla syrup and caramel sauce.
+              </p>
+              <p class="slider-price">$5.00</p>
+            </article>
+
+            <article class="slider-card">
+              <img
+                class="slider-image"
+                src="images/cappuccino.png"
+                alt="Cappuccino coffee"
+              >
+              <h3 class="slider-title">Cappuccino</h3>
+              <p class="slider-description">
+                Espresso, steamed milk and a layer of milk foam.
+              </p>
+              <p class="slider-price">$4.50</p>
+            </article>
+          </div>
+
+          <button class="slider-button slider-button-next" type="button" aria-label="Next slide">
+            →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About our coffee house</h2>
+
+        <div class="about-content">
+          <p class="about-text">
+            We invite you to enjoy freshly brewed coffee and delicious desserts
+            in a warm and cozy atmosphere.
+          </p>
+
+          <p class="about-text">
+            Our coffee house is a place where you can relax, meet friends,
+            work comfortably, and enjoy every cup of coffee.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mobile-app" id="mobile-app">
+      <div class="container">
+        <h2 class="section-title">Download our mobile app</h2>
+
+        <div class="mobile-app-content">
+          <p class="mobile-app-text">
+            Enjoy your favorite coffee wherever you go with our mobile app.
+          </p>
+
+          <a class="button mobile-app-button" href="#">Download the app</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact us</h2>
+
+        <div class="contact-content">
+          <p class="contact-text">
+            We are always happy to welcome you in our coffee house.
+          </p>
+
+          <ul class="contact-list">
+            <li class="contact-item">123 Coffee Street, City</li>
+            <li class="contact-item">+1 234 567 89 00</li>
+            <li class="contact-item">coffeehouse@example.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2026 Coffee House</p>
+
+      <div class="footer-links">
+        <a class="footer-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        <a class="footer-link" href="https://rs.school/" target="_blank" rel="noopener noreferrer">
+          <img src="images/rs-school-logo.svg" alt="Rolling Scopes School logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
