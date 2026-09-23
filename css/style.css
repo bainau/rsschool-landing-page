@@ -181,18 +181,22 @@ body.dark-theme .logo-dark {
   height: 25px;
 }
 
-.theme-sun {
-  display: block;
-}
-
+.theme-sun-dark,
 .theme-moon-dark {
   display: none;
 }
 
+.theme-sun,
+.theme-moon {
+  display: block;
+}
+
+body.dark-theme .theme-sun,
 body.dark-theme .theme-moon {
   display: none;
 }
 
+body.dark-theme .theme-sun-dark,
 body.dark-theme .theme-moon-dark {
   display: block;
 }
