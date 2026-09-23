@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Coffee House - enjoy your favorite coffee and cozy moments.">
+  <title>Coffee House</title>
+  <link rel="icon" type="image/svg+xml" href="images/icons/coffee-cup.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header container">
+    <a class="logo" href="index.html" aria-label="Coffee House home">
+      <img class="logo__img logo-light" src="images/logo.png" alt="Coffee House">
+      <img class="logo__img logo-dark" src="images/logo-dark.png" alt="">
+    </a>
+
+    <nav class="navigation" aria-label="Main navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#favorite">Favorite coffee</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#about">About</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#mobile-app">Mobile app</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#contacts">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="menu-link" href="menu.html">
+        <span>Menu</span>
+        <img class="menu-link-icon" src="images/icons/coffee-cup.svg" alt="">
+      </a>
+
+      <button class="theme-button" type="button" aria-label="Change theme">
+        <img class="theme-icon theme-sun" src="images/icons/Sun.png" alt="">
+        <img class="theme-icon theme-sun-dark" src="images/icons/Sun-dark.png" alt="">
+        <img class="theme-icon theme-moon" src="images/icons/Moon.png" alt="">
+        <img class="theme-icon theme-moon-dark" src="images/icons/Moon-dark.png" alt="">
+      </button>
+
+      <button class="burger-button" type="button" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero container">
+      <div class="hero-background">
+        <img src="images/img-hero.jpg" alt="Coffee House interior">
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Enjoy your
+          <span><span class="hero-title-accent">coffee</span> moments</span>
+        </h1>
+
+        <p class="hero-text">
+          With Coffee House, you can enjoy the best coffee and spend unforgettable
+          moments in a cozy atmosphere.
+        </p>
+
+        <a class="hero-button" href="menu.html">
+          <span>Menu</span>
+          <span class="hero-button-icon">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="favorite container" id="favorite">
+      <h2 class="section-title favorite-title">
+        Choose your <span>favorite coffee</span>
+      </h2>
+
+      <div class="slider">
+        <button class="slider-button" type="button" aria-label="Previous coffee">
+          ←
+        </button>
+
+        <div class="slider-viewport">
+          <div class="slider-track">
+
+            <article class="slider-card">
+              <img class="slider-image" src="images/smores.png" alt="S'mores coffee">
+              <h3 class="slider-title">S'mores Frappuccino</h3>
+              <p class="slider-description">
+                A creamy coffee drink with chocolate, marshmallow and whipped cream.
+              </p>
+              <p class="slider-price">$5.50</p>
+            </article>
+
+            <article class="slider-card">
+              <img class="slider-image" src="images/caramel.png" alt="Caramel coffee">
+              <h3 class="slider-title">Caramel Macchiato</h3>
+              <p class="slider-description">
+                Espresso with steamed milk, vanilla and caramel.
+              </p>
+              <p class="slider-price">$5.00</p>
+            </article>
+
+            <article class="slider-card">
+              <img class="slider-image" src="images/cappuccino.png" alt="Cappuccino">
+              <h3 class="slider-title">Cappuccino</h3>
+              <p class="slider-description">
+                Rich espresso with steamed milk and a thick layer of foam.
+              </p>
+              <p class="slider-price">$4.50</p>
+            </article>
+
+          </div>
+        </div>
+
+        <button class="slider-button" type="button" aria-label="Next coffee">
+          →
+        </button>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-control slider-control-active" type="button" aria-label="Slide 1"></button>
+        <button class="slider-control" type="button" aria-label="Slide 2"></button>
+        <button class="slider-control" type="button" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <h2 class="section-title about-title">
+        About <span>our coffee house</span>
+      </h2>
+
+      <div class="about-images">
+        <div class="about-column">
+          <div class="about-box about-box-tall">
+            <img src="images/about-1.jpg" alt="Coffee House interior">
+          </div>
+
+          <div class="about-box about-box-short">
+            <img src="images/about-2.jpg" alt="Coffee and dessert">
+          </div>
+        </div>
+
+        <div class="about-column">
+          <div class="about-box about-box-short">
+            <img src="images/about-3.jpg" alt="Coffee House atmosphere">
+          </div>
+
+          <div class="about-box about-box-tall">
+            <img src="images/about-4.jpg" alt="Coffee House interior">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mobile-app container" id="mobile-app">
+      <div class="mobile-app-content">
+
+        <div class="mobile-app-text">
+          <h2 class="section-title">
+            Download our <span>mobile app</span>
+          </h2>
+
+          <p>
+            Download the Coffee House app and enjoy your favorite drinks,
+            special offers and convenient ordering wherever you are.
+          </p>
+
+          <div class="mobile-app-buttons">
+            <a class="store-button" href="#">
+              <img class="store-button-icon store-icon-light"
+                   src="images/icons/apple-light.svg"
+                   alt="">
+              <img class="store-button-icon store-icon-dark"
+                   src="images/icons/apple-dark.svg"
+                   alt="">
+              <span class="store-button-text">
+                <span class="store-button-caption">Available on the</span>
+                <span>App Store</span>
+              </span>
+            </a>
+
+            <a class="store-button" href="#">
+              <img class="store-button-icon store-icon-light"
+                   src="images/icons/google-light.svg"
+                   alt="">
+              <img class="store-button-icon store-icon-dark"
+                   src="images/icons/google-dark.svg"
+                   alt="">
+              <span class="store-button-text">
+                <span class="store-button-caption">Get it on</span>
+                <span>Google Play</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="mobile-app-image">
+          <img src="images/mobile-screens.png" alt="Coffee House mobile application">
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer container" id="contacts">
+    <div class="footer-inner">
+
+      <div class="footer-offer">
+        <h2 class="footer-title">
+          Sip, savor, and <span>enjoy</span> every moment
+        </h2>
+
+        <div class="footer-socials">
+          <a class="footer-social"
+             href="https://www.instagram.com/"
+             aria-label="Instagram">
+            <img src="images/icons/instagram.svg" alt="">
+          </a>
+
+          <a class="footer-social"
+             href="https://twitter.com/"
+             aria-label="Twitter">
+            <img src="images/icons/twitter.svg" alt="">
+          </a>
+
+          <a class="footer-social"
+             href="https://www.facebook.com/"
+             aria-label="Facebook">
+            <img src="images/icons/facebook.svg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-contacts">
+        <h2>Contact us</h2>
+
+        <ul class="contacts">
+          <li>
+            <a class="contact-link" href="#">
+              <img src="images/icons/pin-alt.svg" alt="">
+              <span>123 Coffee Street, City</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="contact-link" href="tel:+12345678900">
+              <img src="images/icons/phone.svg" alt="">
+              <span>+1 234 567 89 00</span>
+            </a>
+          </li>
+
+          <li class="contact-hours">
+            <img src="images/icons/clock.svg" alt="">
+            <span>Mon–Sat: 9:00–23:00</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="footer-copyright">© 2026 Coffee House</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
