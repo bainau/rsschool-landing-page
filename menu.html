@@ -1,344 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu | Coffee House</title>
-  <link rel="icon" href="images/logo.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Coffee House menu.">
+  <title>Coffee House - Menu</title>
+
+  <link rel="icon" type="image/svg+xml" href="images/icons/coffee-cup.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,500&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header class="header">
-    <div class="container">
-      <a class="logo" href="index.html">
-        <img src="images/logo.png" alt="Coffee House logo">
+
+  <header class="header container">
+    <a class="logo" href="index.html" aria-label="Coffee House home">
+      <img class="logo__img logo-light" src="images/logo.png" alt="Coffee House">
+      <img class="logo__img logo-dark" src="images/logo-dark.png" alt="">
+    </a>
+
+    <nav class="navigation" aria-label="Main navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html#favorite">Favorite coffee</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html#about">About</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html#mobile-app">Mobile app</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#contacts">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="menu-link" href="menu.html">
+        <span>Menu</span>
+        <img
+          class="menu-link-icon"
+          src="images/icons/coffee-cup.svg"
+          alt=""
+        >
       </a>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html#favorite-coffee">Favorite Coffee</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html#about">About</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html#mobile-app">Mobile App</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html#contact">Contact Us</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="menu.html">Menu</a>
-          </li>
-        </ul>
-      </nav>
 
-      <button class="theme-button" type="button">Theme</button>
+      <button class="theme-button" type="button" aria-label="Change theme">
+        <img
+          class="theme-icon theme-sun"
+          src="images/icons/sun.svg"
+          alt=""
+        >
+        <img
+          class="theme-icon theme-moon"
+          src="images/icons/moon.svg"
+          alt=""
+        >
+        <img
+          class="theme-icon theme-moon-dark"
+          src="images/icons/moon-dark.svg"
+          alt=""
+        >
+      </button>
 
-      <button class="burger-button" type="button" aria-label="Open navigation menu">
+      <button
+        class="burger-button"
+        type="button"
+        aria-label="Open navigation menu"
+      >
         <span></span>
         <span></span>
       </button>
     </div>
   </header>
 
-  <main>
-    <section class="menu" id="menu">
-      <div class="container">
-        <h1 class="menu-title">Choose your favorite coffee</h1>
+  <main class="menu container">
 
-        <div class="menu-categories">
-          <button class="category-button" type="button">Coffee</button>
-          <button class="category-button" type="button">Tea</button>
-          <button class="category-button" type="button">Dessert</button>
+    <h1 class="section-title menu-title">
+      Choose your <span>favorite coffee</span>
+    </h1>
+
+    <div class="menu-categories">
+      <button class="menu-category menu-category-active" type="button">
+        Coffee
+      </button>
+
+      <button class="menu-category" type="button">
+        Tea
+      </button>
+
+      <button class="menu-category" type="button">
+        Dessert
+      </button>
+    </div>
+
+    <div class="menu-grid">
+
+      <!-- Coffee -->
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/irish-coffee.jpg" alt="Irish Coffee">
         </div>
-
-        <div class="menu-grid">
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/irish-coffee.jpg"
-              alt="Irish coffee with whipped cream"
-            >
-            <h2 class="menu-card-title">Irish Coffee</h2>
-            <p class="menu-card-description">
-              Espresso with Irish whiskey, steamed milk and whipped cream.
-            </p>
-            <p class="menu-card-price">$7.00</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/kahlua-coffee.jpg"
-              alt="Kahlua coffee with steamed milk"
-            >
-            <h2 class="menu-card-title">Kahlua Coffee</h2>
-            <p class="menu-card-description">
-              Espresso with Kahlua liqueur and steamed milk.
-            </p>
-            <p class="menu-card-price">$7.00</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/honey-raf.jpg"
-              alt="Honey Raf coffee with milk and honey"
-            >
-            <h2 class="menu-card-title">Honey Raf</h2>
-            <p class="menu-card-description">
-              Espresso with cream, milk and natural honey.
-            </p>
-            <p class="menu-card-price">$5.50</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/ice-cappuccino.jpg"
-              alt="Ice cappuccino with cold milk and foam"
-            >
-            <h2 class="menu-card-title">Ice Cappuccino</h2>
-            <p class="menu-card-description">
-              Espresso with cold milk and a refreshing layer of milk foam.
-            </p>
-            <p class="menu-card-price">$5.00</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/espresso.jpg"
-              alt="Classic espresso coffee"
-            >
-            <h2 class="menu-card-title">Espresso</h2>
-            <p class="menu-card-description">
-              Classic espresso with a rich and intense coffee flavor.
-            </p>
-            <p class="menu-card-price">$4.50</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/latte.jpg"
-              alt="Latte coffee with steamed milk and foam"
-            >
-            <h2 class="menu-card-title">Latte</h2>
-            <p class="menu-card-description">
-              Espresso with steamed milk and a delicate layer of milk foam.
-            </p>
-            <p class="menu-card-price">$5.50</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/latte-macchiato.jpg"
-              alt="Latte macchiato with steamed milk and espresso"
-            >
-            <h2 class="menu-card-title">Latte Macchiato</h2>
-            <p class="menu-card-description">
-              Steamed milk with espresso and a light layer of milk foam.
-            </p>
-            <p class="menu-card-price">$5.50</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/coffee-with-cognac.jpg"
-              alt="Coffee with cognac"
-            >
-            <h2 class="menu-card-title">Coffee with Cognac</h2>
-            <p class="menu-card-description">
-              Rich espresso combined with cognac and a smooth coffee flavor.
-            </p>
-            <p class="menu-card-price">$7.00</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/moroccan.png"
-              alt="Moroccan tea"
-            >
-            <h2 class="menu-card-title">Moroccan Tea</h2>
-            <p class="menu-card-description">
-              Green tea with fresh mint and a refreshing herbal flavor.
-            </p>
-            <p class="menu-card-price">$4.50</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/ginger.png"
-              alt="Ginger tea"
-            >
-            <h2 class="menu-card-title">Ginger Tea</h2>
-            <p class="menu-card-description">
-              Warm tea with ginger and a light spicy flavor.
-            </p>
-            <p class="menu-card-price">$4.50</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/cranberry.png"
-              alt="Cranberry tea"
-            >
-            <h2 class="menu-card-title">Cranberry Tea</h2>
-            <p class="menu-card-description">
-              Fragrant tea with cranberry and a pleasant berry flavor.
-            </p>
-            <p class="menu-card-price">$4.50</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/sea-buckthorn.png"
-              alt="Sea buckthorn tea"
-            >
-            <h2 class="menu-card-title">Sea Buckthorn Tea</h2>
-            <p class="menu-card-description">
-              Fragrant tea with sea buckthorn and a bright fruity flavor.
-            </p>
-            <p class="menu-card-price">$5.00</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/marble-cheesecake.png"
-              alt="Marble cheesecake"
-            >
-            <h2 class="menu-card-title">Marble Cheesecake</h2>
-            <p class="menu-card-description">
-              Creamy cheesecake with a delicate marble chocolate pattern.
-            </p>
-            <p class="menu-card-price">$5.50</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/red-velvet.png"
-              alt="Red velvet cake"
-            >
-            <h2 class="menu-card-title">Red Velvet</h2>
-            <p class="menu-card-description">
-              Soft red velvet cake with smooth cream cheese frosting.
-            </p>
-            <p class="menu-card-price">$5.50</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/cheesecakes.png"
-              alt="Cheesecakes"
-            >
-            <h2 class="menu-card-title">Cheesecakes</h2>
-            <p class="menu-card-description">
-              Tender golden cheesecakes with a creamy and delicate texture.
-            </p>
-            <p class="menu-card-price">$5.00</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/creme-brulee.png"
-              alt="Creme brulee"
-            >
-            <h2 class="menu-card-title">Creme Brulee</h2>
-            <p class="menu-card-description">
-              Classic creamy dessert with a crisp caramelized sugar topping.
-            </p>
-            <p class="menu-card-price">$5.00</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/pancakes.png"
-              alt="Pancakes with toppings"
-            >
-            <h2 class="menu-card-title">Pancakes</h2>
-            <p class="menu-card-description">
-              Soft fluffy pancakes served with sweet toppings.
-            </p>
-            <p class="menu-card-price">$5.00</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/honey-cake.png"
-              alt="Honey cake"
-            >
-            <h2 class="menu-card-title">Honey Cake</h2>
-            <p class="menu-card-description">
-              Tender honey cake with layers of delicate creamy filling.
-            </p>
-            <p class="menu-card-price">$5.50</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/chocolate-cake.png"
-              alt="Chocolate cake"
-            >
-            <h2 class="menu-card-title">Chocolate Cake</h2>
-            <p class="menu-card-description">
-              Rich chocolate cake with a smooth and creamy chocolate filling.
-            </p>
-            <p class="menu-card-price">$5.50</p>
-          </article>
-
-          <article class="menu-card">
-            <img
-              class="menu-card-image"
-              src="images/black-forest.png"
-              alt="Black Forest cake"
-            >
-            <h2 class="menu-card-title">Black Forest</h2>
-            <p class="menu-card-description">
-              Chocolate cake with cherries and a light creamy filling.
-            </p>
-            <p class="menu-card-price">$6.00</p>
-          </article>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Irish Coffee</h2>
+          <p class="menu-card-description">
+            Coffee with Irish whiskey, sugar and cream.
+          </p>
+          <p class="menu-card-price">$7.00</p>
         </div>
+      </article>
 
-        <button class="show-more-button" type="button">Show more</button>
-      </div>
-    </section>
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/kahlua-coffee.jpg" alt="Kahlua Coffee">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Kahlua Coffee</h2>
+          <p class="menu-card-description">
+            Smooth coffee with Kahlua liqueur and cream.
+          </p>
+          <p class="menu-card-price">$6.50</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/honey-raf.jpg" alt="Honey Raf">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Honey Raf</h2>
+          <p class="menu-card-description">
+            Espresso with cream and natural honey.
+          </p>
+          <p class="menu-card-price">$5.50</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/ice-cappuccino.jpg" alt="Ice Cappuccino">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Ice Cappuccino</h2>
+          <p class="menu-card-description">
+            Chilled cappuccino with a smooth coffee flavor.
+          </p>
+          <p class="menu-card-price">$5.00</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/espresso.jpg" alt="Espresso">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Espresso</h2>
+          <p class="menu-card-description">
+            Rich and aromatic classic espresso.
+          </p>
+          <p class="menu-card-price">$3.50</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/latte.jpg" alt="Latte">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Latte</h2>
+          <p class="menu-card-description">
+            Espresso with plenty of steamed milk.
+          </p>
+          <p class="menu-card-price">$4.50</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/latte-macchiato.jpg" alt="Latte Macchiato">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Latte Macchiato</h2>
+          <p class="menu-card-description">
+            Steamed milk layered with espresso.
+          </p>
+          <p class="menu-card-price">$5.00</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/coffee-with-cognac.jpg" alt="Coffee with Cognac">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Coffee with Cognac</h2>
+          <p class="menu-card-description">
+            Strong coffee with a warm cognac finish.
+          </p>
+          <p class="menu-card-price">$7.00</p>
+        </div>
+      </article>
+
+      <!-- Tea -->
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/moroccan.png" alt="Moroccan Tea">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Moroccan</h2>
+          <p class="menu-card-description">
+            Fragrant tea with fresh mint and a refreshing taste.
+          </p>
+          <p class="menu-card-price">$4.50</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/ginger.png" alt="Ginger Tea">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Ginger</h2>
+          <p class="menu-card-description">
+            Warm and aromatic tea with a spicy ginger flavor.
+          </p>
+          <p class="menu-card-price">$4.50</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/cranberry.png" alt="Cranberry Tea">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Cranberry</h2>
+          <p class="menu-card-description">
+            Refreshing tea with a bright cranberry flavor.
+          </p>
+          <p class="menu-card-price">$4.50</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/sea-buckthorn.png" alt="Sea Buckthorn Tea">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Sea Buckthorn</h2>
+          <p class="menu-card-description">
+            Fruity tea with a rich and naturally refreshing taste.
+          </p>
+          <p class="menu-card-price">$4.50</p>
+        </div>
+      </article>
+
+      <!-- Dessert -->
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/marble-cheesecake.png" alt="Marble Cheesecake">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Marble Cheesecake</h2>
+          <p class="menu-card-description">
+            Creamy cheesecake with a delicate marble pattern.
+          </p>
+          <p class="menu-card-price">$5.00</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/red-velvet.png" alt="Red Velvet">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Red Velvet</h2>
+          <p class="menu-card-description">
+            Soft red velvet cake with creamy frosting.
+          </p>
+          <p class="menu-card-price">$5.00</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/cheesecakes.png" alt="Cheesecakes">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Cheesecakes</h2>
+          <p class="menu-card-description">
+            Classic creamy cheesecake with a delicate biscuit base.
+          </p>
+          <p class="menu-card-price">$5.00</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/creme-brulee.png" alt="Crème Brûlée">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Crème Brûlée</h2>
+          <p class="menu-card-description">
+            Smooth vanilla cream with a crisp caramelized top.
+          </p>
+          <p class="menu-card-price">$5.00</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/pancakes.png" alt="Pancakes">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Pancakes</h2>
+          <p class="menu-card-description">
+            Fluffy pancakes served with sweet toppings.
+          </p>
+          <p class="menu-card-price">$5.00</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/honey-cake.png" alt="Honey Cake">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Honey Cake</h2>
+          <p class="menu-card-description">
+            Delicate layered cake with honey and cream.
+          </p>
+          <p class="menu-card-price">$5.00</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/chocolate-cake.png" alt="Chocolate Cake">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Chocolate Cake</h2>
+          <p class="menu-card-description">
+            Rich chocolate cake with a smooth creamy filling.
+          </p>
+          <p class="menu-card-price">$5.00</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-image">
+          <img src="images/black-forest.png" alt="Black Forest">
+        </div>
+        <div class="menu-card-content">
+          <h2 class="menu-card-title">Black Forest</h2>
+          <p class="menu-card-description">
+            Chocolate cake with cream and cherry filling.
+          </p>
+          <p class="menu-card-price">$5.00</p>
+        </div>
+      </article>
+
+    </div>
+
+    <button class="menu-more" type="button">
+      Show more
+    </button>
   </main>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-contact">
-      <p>123 Coffee Street, City</p>
-      <p>+1 234 567 89 00</p>
-      <p>coffeehouse@example.com</p>
-      <p>© 2026 Coffee House</p>
+  <footer class="footer container" id="contacts">
+    <div class="footer-inner">
+
+      <div class="footer-offer">
+        <h2 class="footer-title">
+          Sip, savor, and <span>enjoy</span> every moment
+        </h2>
+
+        <div class="footer-socials">
+          <a
+            class="footer-social"
+            href="https://www.instagram.com/"
+            aria-label="Instagram"
+          >
+            <img src="images/icons/instagram.svg" alt="">
+          </a>
+
+          <a
+            class="footer-social"
+            href="https://twitter.com/"
+            aria-label="Twitter"
+          >
+            <img src="images/icons/twitter.svg" alt="">
+          </a>
+
+          <a
+            class="footer-social"
+            href="https://www.facebook.com/"
+            aria-label="Facebook"
+          >
+            <img src="images/icons/facebook.svg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-contacts">
+        <h2>Contact us</h2>
+
+        <ul class="contacts">
+          <li>
+            <a class="contact-link" href="#">
+              <img src="images/icons/pin-alt.svg" alt="">
+              <span>123 Coffee Street, City</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="contact-link" href="tel:+12345678900">
+              <img src="images/icons/phone.svg" alt="">
+              <span>+1 234 567 89 00</span>
+            </a>
+          </li>
+
+          <li class="contact-hours">
+            <img src="images/icons/clock.svg" alt="">
+            <span>Mon–Sat: 9:00–23:00</span>
+          </li>
+        </ul>
+      </div>
+
     </div>
 
-    <div class="footer-links">
-      <a class="footer-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">
-        GitHub
-      </a>
-      <a class="footer-link" href="https://rs.school/" target="_blank" rel="noopener noreferrer">
-        <img src="images/rs-school-logo.svg" alt="Rolling Scopes School logo">
-      </a>
-    </div>
-  </div>
-</footer>
+    <p class="footer-copyright">© 2026 Coffee House</p>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
