@@ -42,17 +42,7 @@
         </li>
       </ul>
     </nav>
-
     <div class="header-actions">
-      <a class="menu-link" href="menu.html">
-        <span>Menu</span>
-        <img
-          class="menu-link-icon"
-          src="images/icons/coffee-cup.svg"
-          alt=""
-        >
-      </a>
-
       <button class="theme-button" type="button" aria-label="Change theme">
         <img
           class="theme-icon theme-sun"
@@ -76,6 +66,15 @@
         >
       </button>
 
+      <a class="menu-link" href="menu.html">
+        <span>Menu</span>
+        <img
+          class="menu-link-icon"
+          src="images/icons/coffee-cup.svg"
+          alt=""
+        >
+      </a>
+
       <button
         class="burger-button"
         type="button"
@@ -94,15 +93,27 @@
     </h1>
 
     <div class="menu-categories">
-      <button class="menu-category menu-category-active" type="button">
+      <button
+        class="menu-category menu-category-active"
+        type="button"
+        data-category="coffee"
+      >
         Coffee
       </button>
 
-      <button class="menu-category" type="button">
+      <button
+        class="menu-category"
+        type="button"
+        data-category="tea"
+      >
         Tea
       </button>
 
-      <button class="menu-category" type="button">
+      <button
+        class="menu-category"
+        type="button"
+        data-category="dessert"
+      >
         Dessert
       </button>
     </div>
@@ -422,7 +433,7 @@
 
         <ul class="contacts">
           <li>
-            <a class="contact-link" href="#">
+            <a class="contact-link" href="https://www.google.com/maps/search/?api=1&query=123%20Coffee%20Street%2C%20City" target="_blank" rel="noopener noreferrer">
               <img src="images/icons/pin-alt.svg" alt="">
               <span>123 Coffee Street, City</span>
             </a>
